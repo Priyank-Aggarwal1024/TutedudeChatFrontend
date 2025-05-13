@@ -1,0 +1,209 @@
+.tca-message-bycurrentuser {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  gap: 14px;
+  align-items: center;
+}
+.tca-message-byotheruser {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 14px;
+  align-items: center;
+}
+.tca-message-byotheruser .tca-message {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  max-width: 70%;
+}
+.tca-message-bycurrentuser .tca-message {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  max-width: 70%;
+}
+.tca-message {
+  margin-bottom: 19px;
+}
+
+.tca-message-text {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 132%;
+  max-width: 100%;
+  text-wrap: wrap;
+  word-wrap: break-word;
+  padding: 10px 9px 13px 9px;
+}
+.tca-message-bycurrentuser .tca-message-text,
+.tca-message-bycurrentuser .tca-file-image-outer,
+.tca-message-bycurrentuser .tca-file-audio-outer,
+.tca-message-bycurrentuser .tca-file-video-outer {
+  border-radius: 8px 8px 0px 8px;
+  background: #992e9d;
+  color: #fff;
+}
+.tca-message-byotheruser .tca-message-text,
+.tca-message-byotheruser .tca-file-image-outer,
+.tca-message-byotheruser .tca-file-audio-outer,
+.tca-message-byotheruser .tca-file-video-outer {
+  border-radius: 8px 8px 8px 0px;
+  background: rgba(242, 208, 239, 0.23);
+  color: #333;
+}
+.tca-message-time {
+  color: #666;
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 132%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.tca-message-divider {
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 132.659%;
+  display: flex;
+  justify-content: center;
+  width: 98%;
+  align-items: center;
+  gap: 8px;
+  margin: 14px auto;
+}
+.tca-message-divider-left,
+.tca-message-divider-right {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.11);
+}
+.tca-message-divider > span {
+  text-wrap-mode: nowrap;
+  cursor: pointer;
+}
+.tca-message-bycurrentuser .tca-file {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.43);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  padding: 13px 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.tca-message-byotheruser .tca-file {
+  border-radius: 8px;
+  background: #d9d9d9;
+  cursor: pointer;
+  padding: 13px 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.tca-file-svg {
+  min-width: 39px;
+  min-height: 39px;
+}
+.tca-file-right {
+  max-width: calc(100% - 45px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.tca-file-right-name {
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+}
+.tca-file-image img {
+  max-width: 245px;
+  max-height: 100%;
+}
+.tca-file-audio-outer,
+.tca-file-image-outer,
+.tca-file-video-outer {
+  width: 100%;
+  height: 100%;
+  padding: 10px 9px 13px 9px;
+}
+
+.tca-file-image.tca-file-image,
+.tca-file-video.tca-file-video,
+.tca-file-audio.tca-file-audio {
+  padding: 0;
+}
+.tca-file-image.tca-file-image img,
+.tca-file-video.tca-file-video video,
+.tca-file-audio.tca-file-audio audio {
+  max-width: 100%;
+  width: 245px;
+}
+.tca-file-video video {
+  max-width: 245px;
+  max-height: 100%;
+  border-radius: 6px;
+}
+.tca-file-container {
+  position: relative;
+  margin-top: 20px;
+}
+.tca-file-container-download {
+  display: none;
+  padding: 4px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 4px 12.1px 0px rgba(44, 44, 44, 0.3);
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.tca-file-video {
+  position: relative;
+}
+.tca-file-video-inner {
+  position: absolute;
+  z-index: 5;
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: 6px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tca-file-video-inner-bottom {
+  width: calc(100% - 8px);
+  position: absolute;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  bottom: 4px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 132.659%;
+  left: 4px;
+  justify-content: space-between;
+}
+.tca-file-video-inner-bottom-left,
+.tca-file-video-inner-bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

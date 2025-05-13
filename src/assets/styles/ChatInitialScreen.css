@@ -1,0 +1,126 @@
+.tca-doubts-home {
+  width: 100%;
+  height: 100%;
+  max-height: 100dvh;
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+  flex-direction: column;
+  display: flex;
+  max-width: 384px;
+  padding: 13px 24px;
+}
+.tca-doubts-home-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tca-dht-logo {
+  max-width: 100%;
+  max-height: 100%;
+}
+.tca-dht-logo-outer {
+  width: 93px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tca-doubts-home-bottom {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+.tca-dhb-heading {
+  color: rgba(51, 51, 51, 0.64);
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 132%;
+  letter-spacing: -0.52px;
+  max-width: 293px;
+}
+.tca-dhb-heading-pink {
+  color: #800080;
+}
+.tca-dhb-question {
+  color: #212121;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 114%;
+  letter-spacing: -0.28px;
+  display: inline-flex;
+  padding: 13px 8px 13px 16px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+.tca-doubts-home-bottom-mentoravailable {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+.tca-dhbm-heading {
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 132.473%;
+  letter-spacing: -0.52px;
+  max-width: 293px;
+}
+.tca-dhbm-heading-gray {
+  color: rgba(51, 51, 51, 0.64);
+}
+.tca-dhbm-recent {
+  width: 100%;
+  min-height: 85px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #fff;
+  box-shadow: 0px 4px 12.3px 0px rgba(0, 0, 0, 0.06);
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.tca-dhbm-recent-head {
+  color: #333;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 700;
+}
+.tca-dhbm-recent-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tca-dhbmrb-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.tca-dhbm-message-text {
+  color: #333;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+.tca-dhbm-message-time {
+  color: #333;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.6;
+}

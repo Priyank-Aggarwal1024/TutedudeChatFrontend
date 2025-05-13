@@ -1,0 +1,45 @@
+.app {
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tutedude-chat-app {
+  width: 100vw;
+  height: 100dvh;
+  background: #f3ecf8;
+}
+.tca-open-chat {
+  outline: none;
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  font-size: 16px;
+  font-family: Poppins;
+  background-color: #800080;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.flex {
+  display: flex;
+}
+.item-center {
+  align-items: center;
+}
+.gap-1 {
+  gap: 2px;
+}
+.truncate-text {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tca-doubts {
+  width: 100vw;
+  height: 100dvh;
+  background: #f3ecf8;
+  display: grid;
+  grid-template-columns: 1fr;
+}

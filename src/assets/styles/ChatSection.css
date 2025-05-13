@@ -1,0 +1,222 @@
+.chat-section {
+  width: 100%;
+  height: 100%;
+  max-height: 100dvh;
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+  flex-direction: column;
+  display: flex;
+  max-width: 384px;
+}
+.chat-section-top {
+  width: 100%;
+  padding: 9px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.12);
+  min-height: 57px;
+}
+.chat-st-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.chat-st-left-messageus {
+  color: #212121;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.32px;
+}
+.chat-st-left-user-status {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  z-index: 1;
+}
+.chat-st-left-name {
+  color: #434347;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+.chat-st-right {
+  cursor: pointer;
+  display: flex;
+  width: fit-content;
+  padding: 6px 8px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  border-radius: 45px;
+  border: 1px solid #992e9d;
+  background: rgba(161, 5, 161, 0.07);
+  color: #992e9d;
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.chat-room-about {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+}
+.chat-room-about-top {
+  display: flex;
+  width: 100%;
+  height: 53px;
+  padding: 14px 17px;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  color: #434347;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.12);
+}
+.chat-room-about-main {
+  padding: 13px 14px;
+  height: fit-content;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+.chat-ra-emailsec {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+}
+.chat-ra-emailsec-title {
+  color: rgba(67, 67, 71, 0.71);
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+.chat-ra-emailsec-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chat-rae-email {
+  color: #333;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.chat-section-messages {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  height: fit-content;
+  overflow-y: auto;
+  max-width: 100%;
+  padding: 15px;
+}
+.chat-section-inpopt {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0px -3px 11.9px 0px rgba(0, 0, 0, 0.06);
+}
+.chat-section-inpopt-inner {
+  border: 2px solid rgba(183, 59, 190, 0.33);
+  min-height: 54px;
+  height: fit-content;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 9px;
+}
+.chat-section-inpopt-input {
+  display: block;
+  outline: none;
+  border: none;
+  color: #212121;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 114%;
+  letter-spacing: -0.3px;
+  padding-left: 8px;
+  width: 100%;
+}
+.chat-section-inpopt-input::placeholder {
+  opacity: 0.5;
+}
+.chat-section-inpopt-sendsvg {
+  padding: 6px;
+  min-height: 35px;
+  min-width: 35px;
+  border-radius: 50%;
+  background: rgba(177, 177, 177, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.chat-textarea-input {
+  width: 100%;
+  resize: none;
+  max-height: 120px; /* 5 lines x 24px */
+  overflow-y: auto;
+  outline: none;
+  box-sizing: border-box;
+}
+.chat-textarea-input::-webkit-scrollbar {
+  display: none;
+}
+.chat-inp-file {
+  display: none;
+}
+.chat-section-messages::-webkit-scrollbar {
+  display: none;
+}
+
+@media (width<1024px) {
+  .chat-section-outer-grid {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+  .chat-room-about {
+    position: absolute;
+    right: 0;
+    min-width: 50%;
+    z-index: 10;
+  }
+}
+@media (width<868px) {
+  .chat-section-outer {
+    height: inherit;
+  }
+}
+@media (width<700px) {
+  .chat-section-outer {
+    position: absolute;
+    z-index: -1;
+  }
+  .chat-section-outer-zhigher {
+    position: absolute;
+    z-index: 20;
+  }
+}
